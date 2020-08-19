@@ -20,7 +20,7 @@ async function run() {
                 CREATE TABLE todos (
                     id SERIAL PRIMARY KEY NOT NULL,
                     todo VARCHAR(512) NOT NULL,
-                    completed INTEGER NOT NULL,
+                    completed BOOLEAN NOT NULL,
                     user_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
